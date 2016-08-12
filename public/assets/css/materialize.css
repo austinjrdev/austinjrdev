@@ -1,0 +1,32 @@
+#ajd_logo{
+	align-content: center;
+	background-color: red;
+}
+
+#container{
+	background-color: red;
+}
+
+.results {
+	width: 80%;
+	margin: 0 auto;
+	border-style:solid;
+	border-color:white;
+	border-radius: 50px;
+}
+
+.text {
+	color:black;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.mentorContainer {
+	border-bottom-left-radius: 50px;
+}
+
+.whitespace {
+	height:20px;
+}

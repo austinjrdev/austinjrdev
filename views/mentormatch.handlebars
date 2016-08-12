@@ -1,0 +1,49 @@
+<div class="white navbar-fixed">
+		<nav class="blue-grey lighten-1">
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo"><img src="/assets/css/images/homepage/aJd_logo_final_white.png" alt="AJD logo" height="45%" width="45%" id="ajd_logo"></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="sass.html">Mission</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li class="active"><a href="gittyup.html">GittyUp</a></li>
+				</ul>
+			</div>
+		</nav>
+</div>
+
+{{#each returnedMentors}}
+
+<div style ="height:10px">
+</div>
+
+<ul class = "results">
+	
+		<div class="col s12 m7">
+		    <h2 class="header">{{this.nameFirst}} {{this.nameLast}}</h2>
+		    
+		    <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;" class="card horizontal">
+		      
+			      <div class="card-image">
+			        <img class = "animated fadeIn" style = "border-radius:50%" src="/{{this.photoLink}}">
+			      </div>
+		      
+		      <div class="card-stacked">
+		        
+		        <div class="card-content">
+		          <p><span class = "text bold">Github Link:</span><span class = "text"> {{this.githubLink}}</span></p>
+		          <p><span class = "text bold">My Web Page:</span><span class = "text"> {{this.userWebLink}}</span></p>
+		          <p><span class = "text bold">About Me:</span></p>
+		          <p><span class = "text">{{this.bio}}</p>
+		        </div>	
+		      
+		      </div>
+		    
+		    </div>
+		  
+		</div>	
+</ul>
+
+<div style ="height:10px">
+</div>
+
+{{/each}}
